@@ -11,7 +11,6 @@ syn region grokCapture    start=~\m%{~        end=~\m}~    skip=~\v\#\|\\.~  con
 syn region grokCapture    start=~\m(?~        end=~\m)~    skip=~\v\#\|\\.~  contains=grokVariable contained 
 syn region grokVariable   start=~\m<\zs\h\+~  end=~\m\ze>~ skip=~\v\#\|\\.~  oneline  contained
 syn region grokVariable   start=~\m[^?]:\zs\h\+~  end=~\m\ze}~ skip=~\v\#\|\\.~  oneline  contained
-" syn region grokVariable   start=~\m[^?]:\zs\h\+~  end=~\m\ze}~ skip=~\v\#\|\\.~  oneline  contained
 
 
 syn region logstashBlock start=~{~ end=~}~ skip=~\v\#\|\\.~ contains=logstashBlock,logstashString,logstashPlugin,logstashConditional,logstashOperator,logstashBoolean,logstashComment,logstashVariableBlock fold transparent
